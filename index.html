@@ -3,18 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Francine Portfolio</title>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    /* Custom palette */
-    :root {
-      --sage: #A3B18A;
-      --sage-light: #DCE7D4;
-      --cream: #F7F4ED;
-      --charcoal: #2F3E46;
+  <!-- Extend Tailwind with your custom palette -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: '#A3B18A',
+            'sage-light': '#DCE7D4',
+            cream: '#F7F4ED',
+            charcoal: '#2F3E46'
+          }
+        }
+      }
     }
-  </style>
+  </script>
 </head>
+
 
 <body class="bg-cream text-charcoal">
 
