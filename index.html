@@ -8,27 +8,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind custom config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            sage: '#A3B18A',
-            'sage-light': '#DCE7D4',
-            cream: '#F7F4ED',
-            charcoal: '#2F3E46'
-          }
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          blueSoft: '#AFC7E3',      /* soft blue */
+          charcoal: '#2F3E46',      /* hair tone */
+          cream: '#F7F4ED',         /* warm neutral */
+          graySoft: '#E5E7EB',      /* background gray */
+          sage: '#A3B18A'           /* muted sage accent */
         }
       }
     }
-  </script>
+  }
+</script>
+
 </head>
 
 <body class="bg-cream text-charcoal text-[18px] md:text-[19px]">
-
+  
   <!-- Navigation -->
-  <nav class="p-6 bg-white shadow-sm border-b border-gray-200">
-    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+<nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+  <div class="max-w-5xl mx-auto flex items-center space-x-8">
       <a href="/" class="font-semibold text-charcoal hover:text-sage">Home</a>
       <a href="/case-studies/main-case-study.html" class="hover:text-sage">Case Studies</a>
       <a href="/work-samples/dashboards.html" class="hover:text-sage">Work Samples</a>
@@ -42,9 +44,12 @@
 
     <!-- Text -->
     <div>
-      <h1 class="text-5xl font-bold mb-6">
-        Francine Stephens | Experimentation & Behavioral Metrics
-      </h1>
+<h1 class="text-5xl font-bold mb-6">
+  <span class="border-b-4 border-blueSoft pb-1">
+    Francine Stephens
+  </span>
+  <span class="text-charcoal/80"> | Experimentation & Behavioral Metrics</span>
+</h1>
 
       <p class="text-xl leading-relaxed text-charcoal/80">
         I modernize experimentation reporting, build behavioral metrics frameworks, and design
@@ -53,8 +58,8 @@
 
       <div class="mt-10">
         <a href="/case-studies/main-case-study.html"
-           class="inline-block px-6 py-3 bg-sage text-white rounded-md shadow 
-                  hover:bg-charcoal transition">
+           class="inline-block px-6 py-3 bg-sage text-white rounded-md shadow hover:bg-charcoal transition"
+">
           View my flagship case study
         </a>
       </div>
@@ -64,14 +69,13 @@
     <div class="flex justify-center md:justify-end">
       <img src="/francine-portfolio/assets/images/headshot.jpg"
            alt="Francine headshot"
-           class="rounded-2xl shadow-md border border-gray-200 
-                  w-64 md:w-72 max-w-xs h-auto object-cover">
+           class="rounded-2xl shadow-md border border-graySoft w-64 md:w-72 max-w-xs h-auto object-cover">
     </div>
 
   </header>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-gray-200 py-8 mt-20">
+  <footer class="bg-white border-t border-graySoft py-8 mt-20">
     <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
       <p>© 2026 Francine S.</p>
       <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
