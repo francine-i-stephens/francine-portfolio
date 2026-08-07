@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Studies | Francine Stephens</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="/" class="font-semibold text-charcoal hover:text-blueSoft">Home</a>
+      <a href="/case-studies/index.html" class="hover:text-blueSoft font-semibold">Case Studies</a>
+      <a href="/work-samples/index.html" class="hover:text-blueSoft">Work Samples</a>
+      <a href="/about.html" class="hover:text-blueSoft">About</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-4">Case Studies</h1>
+    <p class="text-charcoal/80 text-xl">
+      Deep dives into experimentation, behavioral insights, and product decision-making.
+    </p>
+  </header>
+
+  <!-- Cards -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Precision Pays -->
+      <div class="bg-white rounded-xl shadow-sm border border-graySoft p-6">
+        <h3 class="text-xl font-semibold mb-3 text-charcoal">Precision Pays</h3>
+        <p class="text-charcoal/80 mb-4">
+          Standardized candidate scoring reveals hidden behavioral friction in Recruiting.
+        </p>
+        <a href="/case-studies/precision-pays.html"
+           class="text-blueSoft font-medium hover:text-charcoal transition">
+          View case study →
+        </a>
+      </div>
+
+      <!-- Silent Failure -->
+      <div class="bg-white rounded-xl shadow-sm border border-graySoft p-6">
+        <h3 class="text-xl font-semibold mb-3 text-charcoal">Silent Failure — AI Summary Trap</h3>
+        <p class="text-charcoal/80 mb-4">
+          AI summaries introduce a subtle behavioral failure that masks user intent in Search.
+        </p>
+        <a href="/case-studies/ai-summary-trap.html"
+           class="text-blueSoft font-medium hover:text-charcoal transition">
+          View case study →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
