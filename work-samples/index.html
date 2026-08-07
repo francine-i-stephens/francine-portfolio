@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work Samples | Francine Stephens</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="/" class="font-semibold text-charcoal hover:text-blueSoft">Home</a>
+      <a href="/case-studies/index.html" class="hover:text-blueSoft">Case Studies</a>
+      <a href="/work-samples/index.html" class="hover:text-blueSoft font-semibold">Work Samples</a>
+      <a href="/about.html" class="hover:text-blueSoft">About</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-4">Work Samples</h1>
+    <p class="text-charcoal/80 text-xl">
+      Technical, analytical, and storytelling artifacts from experimentation, real estate, and NLP.
+    </p>
+  </header>
+
+  <!-- Cards -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Python Automation -->
+      <div class="bg-white rounded-xl shadow-sm border border-graySoft p-6">
+        <h3 class="text-xl font-semibold mb-3 text-charcoal">Automated A/B Test Analysis</h3>
+        <p class="text-charcoal/80 mb-4">
+          Python-based automation for production experimentation analysis.
+        </p>
+        <a href="/work-samples/ab-automation.html"
+           class="text-blueSoft font-medium hover:text-charcoal transition">
+          View sample →
+        </a>
+      </div>
+
+      <!-- Real Estate Infographic -->
+      <div class="bg-white rounded-xl shadow-sm border border-graySoft p-6">
+        <h3 class="text-xl font-semibold mb-3 text-charcoal">Submarket Population Dynamics</h3>
+        <p class="text-charcoal/80 mb-4">
+          Infographic-style analysis for investment decision-making in real estate.
+        </p>
+        <a href="/work-samples/population-dynamics.html"
+           class="text-blueSoft font-medium hover:text-charcoal transition">
+          View sample →
+        </a>
+      </div>
+
+      <!-- Airbnb NLP -->
+      <div class="bg-white rounded-xl shadow-sm border border-graySoft p-6">
+        <h3 class="text-xl font-semibold mb-3 text-charcoal">Airbnb NLP Analysis</h3>
+        <p class="text-charcoal/80 mb-4">
+          Academic-style long-form writing using NLP to analyze Airbnb data.
+        </p>
+        <a href="/work-samples/airbnb-nlp.html"
+           class="text-blueSoft font-medium hover:text-charcoal transition">
+          View sample →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
