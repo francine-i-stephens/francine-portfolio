@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Precision Pays | Case Study</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../index.html" class="font-semibold text-charcoal hover:text-blueSoft">Home</a>
+      <a href="index.html" class="hover:text-blueSoft">Case Studies</a>
+      <a href="../work-samples/index.html" class="hover:text-blueSoft">Work Samples</a>
+      <a href="../about.html" class="hover:text-blueSoft">About</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-4">Precision Pays</h1>
+    <p class="text-charcoal/80 text-xl">
+      A pre‑production A/B experiment revealing how scoring precision reshapes candidate evaluation behavior.
+    </p>
+  </header>
+
+  <!-- Visual Summary -->
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="bg-white border border-graySoft rounded-xl p-6 mb-12 shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 text-charcoal">At a Glance</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-charcoal/80">
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">+23%</p>
+          <p class="text-sm">Accuracy lift with numeric scoring</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">2.4×</p>
+          <p class="text-sm">More profile views on A‑tier candidates</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">65% → 27%</p>
+          <p class="text-sm">Increase in AI‑summary engagement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">The Problem</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        Candidate evaluation across Workday’s ecosystem was fragmented: letter grades on one surface,
+        percentages on another, trait‑based scores elsewhere. The inconsistency wasn’t just cosmetic — it made
+        it harder for hiring managers, PMOs, and recruiters to compare candidates confidently, and it obscured
+        the evidence needed to make high‑quality decisions.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Hypothesis & Mechanism</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-4">
+        If we replaced legacy letter grades with numeric percentage scores, users would navigate candidate lists
+        more accurately and more efficiently — especially when the task depended on subtle skill differences.
+      </p>
+      <p class="text-charcoal/80 leading-relaxed">
+        Two B‑tier candidates were deliberately chosen to expose the ambiguity trap. Under a letter grade,
+        Tyler (81%) and Anika (76%) looked identical. Under numeric scoring, the difference became visible —
+        and Tyler’s strong Jira experience mattered for the task.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Say vs. Do</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-4">
+        Self‑report suggested both variants were equivalent. But behavior told a different story: numeric scoring
+        produced a 23% lift in accuracy and drove deeper verification — more profile views, more resume checks,
+        more in‑page searches for the Jira requirement.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">The Trade-Off</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        Numeric scoring wasn’t frictionless. Findability sentiment dropped 17 points. But qualitative feedback
+        revealed why: precision prompted verification. Users dug deeper because the interface invited them to.
+        The friction wasn’t a flaw — it was a byproduct of more thorough evaluation.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Business Angle</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        Numeric scoring didn’t just improve UX. It increased engagement with AI‑generated content — profile and
+        AI‑summary views jumped from 27% to 65%. Under a consumption‑based credits model, this is meaningful
+        usage. The low discovery rate of explainability (13–19%) is no longer just a UX gap — it’s underutilized
+        consumption.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Outcome</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        The team adopted numeric scoring and initiated a follow‑up A/B test on explainability placement and
+        inline evidence density. The results were shared with other recruiting teams to build the case for
+        standardizing scoring across surfaces.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
