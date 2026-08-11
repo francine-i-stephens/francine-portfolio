@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb NLP Analysis | Work Sample</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../../index.html" class="hover:text-blueSoft">Home</a>
+      <a href="../../case-studies/index.html" class="hover:text-blueSoft">Case Studies</a>
+      <a href="../index.html" class="hover:text-blueSoft">Work Samples</a>
+      <a href="../../visualizations/index.html" class="hover:text-blueSoft">Data Visualizations</a>
+      <a href="../../about.html" class="hover:text-blueSoft">About</a>
+      <a href="../../resume.html" class="hover:text-blueSoft">Resume</a>
+      <a href="../../contact.html" class="hover:text-blueSoft">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6">Airbnb NLP Analysis</h1>
+
+    <p class="text-xl text-charcoal/80 leading-relaxed mb-10 max-w-3xl">
+      This project analyzes 19,967 Airbnb listings across 2,156 Los Angeles neighborhoods to uncover 
+      how hosts describe their neighborhoods — and how those descriptions reflect racialized patterns 
+      in urban perception. Using NLP topic modeling, dictionary correlations, and spatial statistics, 
+      the analysis reveals how neighborhood marketing language aligns with racial composition and 
+      longstanding stereotypes about urban desirability.
+    </p>
+
+    <!-- PDF Download Button -->
+    <a href="../../assets/work-samples/airbnb-nlp-analysis/Airbnb Neighborhood Descriptions and Racial Discourse Stephens.pdf"
+       class="inline-block px-5 py-3 bg-blueSoft text-charcoal font-semibold rounded-lg 
+              hover:bg-charcoal hover:text-white transition mb-12">
+      Download Full Analysis (PDF)
+    </a>
+  </section>
+
+  <!-- Sections -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+
+    <!-- Overview -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        Airbnb hosts act as place‑based entrepreneurs, marketing their neighborhoods to prospective 
+        visitors. This study investigates how those descriptions differ across racial neighborhood 
+        compositions — and whether hosts implicitly or explicitly engage with stereotypes about race, 
+        safety, and urban life.
+      </p>
+    </div>
+
+    <!-- Data -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Data</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        The dataset includes <strong>19,967 Airbnb listings</strong> from Los Angeles (2022), mapped to 
+        <strong>2,156 census block groups</strong>. Neighborhood racial composition comes from the 
+        2021 ACS 5‑year estimates. A racial typology (Crowder et al., 2012) categorizes neighborhoods 
+        into 12 race‑composition types (e.g., Predominantly White, Majority Hispanic, Black‑White Mix).
+      </p>
+    </div>
+
+    <!-- Methods -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Methods</h2>
+      <ul class="list-disc pl-6 space-y-2 text-charcoal/80">
+        <li><strong>Topic Modeling (LDA)</strong> — 100 topics modeled using MALLET</li>
+        <li><strong>Dictionary Correlations</strong> — LIWC Leisure & Family/Home categories</li>
+        <li><strong>Regression Analysis</strong> — Topic prevalence regressed on neighborhood race type</li>
+        <li><strong>Spatial Statistics</strong> — Moran’s I and Getis‑Ord Gi* to detect spatial clustering</li>
+      </ul>
+    </div>
+
+    <!-- Key Findings -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Key Findings</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-4">
+        The analysis reveals clear racialized patterns in how neighborhoods are marketed:
+      </p>
+
+      <ul class="list-disc pl-6 space-y-2 text-charcoal/80">
+        <li><strong>Predominantly white neighborhoods</strong> emphasize nature, aesthetics, and upscale leisure.</li>
+        <li><strong>Minority‑majority neighborhoods</strong> emphasize residents, community, and urban amenities.</li>
+        <li><strong>Majority Black neighborhoods</strong> frequently reference safety, diversity, and proximity to major venues.</li>
+        <li><strong>Mixed neighborhoods</strong> highlight cultural vibrancy, nightlife, and downtown proximity.</li>
+      </ul>
+    </div>
+
+    <!-- Visuals Placeholder -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Visuals</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-6">
+        Visualizations from the analysis — including topic clusters, spatial autocorrelation maps, and 
+        neighborhood racial typology — will be added here.
+      </p>
+
+      <!-- Placeholder box -->
+      <div class="w-full h-64 bg-graySoft rounded-xl flex items-center justify-center text-charcoal/50">
+        Visuals Coming Soon
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
