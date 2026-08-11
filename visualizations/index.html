@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Visualizations | Francine Stephens</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../index.html" class="hover:text-blueSoft">Home</a>
+      <a href="../case-studies/index.html" class="hover:text-blueSoft">Case Studies</a>
+      <a href="../work-samples/index.html" class="hover:text-blueSoft">Work Samples</a>
+      <a href="index.html" class="font-semibold text-charcoal hover:text-blueSoft">Data Visualizations</a>
+      <a href="../about.html" class="hover:text-blueSoft">About</a>
+      <a href="../resume.html" class="hover:text-blueSoft">Resume</a>
+      <a href="../contact.html" class="hover:text-blueSoft">Contact</a>
+      <a href="index.html" class="font-semibold text-charcoal hover:text-blueSoft">Data Visualizations</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6">Data Visualizations</h1>
+
+    <p class="text-xl text-charcoal/80 leading-relaxed mb-10 max-w-3xl">
+      A curated collection of maps, dashboards, and visual analyses I've created across spatial analysis, 
+      experimentation, and product insights. Some dashboards use fictionalized values to protect proprietary 
+      data while preserving the structure and analytical approach.
+    </p>
+  </section>
+
+  <!-- Visualization Gallery -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+
+    <!-- Spatial Analysis -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Spatial Analysis & Mapping</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Texas Megaregions -->
+        <div>
+          <a href="texas-megaregions/index.html">
+            <img src="../assets/visualizations/texas-megaregions-thumb.png" 
+                 alt="Texas Megaregions Infographic" 
+                 class="rounded-xl shadow-lg mb-4 hover:opacity-90 transition">
+          </a>
+          <p class="text-charcoal/80">
+            Multi-part infographic comparing population growth, density, and migration flows across the 
+            Dallas–Fort Worth and San Antonio–Austin megaregions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dashboards -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Dashboards & Product Insights</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Real Estate Dashboard -->
+        <div>
+          <a href="real-estate-dashboard/index.html">
+            <img src="../assets/visualizations/real-estate-dashboard-thumb.png" 
+                 alt="Real Estate Dashboard" 
+                 class="rounded-xl shadow-lg mb-4 hover:opacity-90 transition">
+          </a>
+          <p class="text-charcoal/80">
+            Dashboard illustrating rent growth, construction pipelines, and demographic segmentation across 
+            submarkets. Values are fictionalized; structure and insights reflect real analysis.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Experimentation -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Experimentation & Behavioral Metrics</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Example Experiment Viz -->
+        <div>
+          <a href="experimentation/index.html">
+            <img src="../assets/visualizations/experiment-uplift-thumb.png" 
+                 alt="Experiment Uplift Chart" 
+                 class="rounded-xl shadow-lg mb-4 hover:opacity-90 transition">
+          </a>
+          <p class="text-charcoal/80">
+            [COMING SOON] Uplift visualization from a pre-production A/B test evaluating user engagement across segments.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
