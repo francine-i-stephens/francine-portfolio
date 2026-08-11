@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Texas Megaregions | Data Visualization</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../../index.html" class="hover:text-blueSoft">Home</a>
+      <a href="../index.html" class="hover:text-blueSoft">Data Visualizations</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6">Texas Megaregions</h1>
+
+    <p class="text-xl text-charcoal/80 leading-relaxed mb-10 max-w-3xl">
+      A multi-part visualization series exploring population growth, density, and migration flows across 
+      the Dallas–Fort Worth and San Antonio–Austin megaregions. These visuals combine U.S. Census 
+      population estimates, migration flow data, and geospatial overlays to highlight how people are 
+      moving into Texas’ two largest economic corridors.
+    </p>
+  </section>
+
+  <!-- Visualization Series -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+
+    <!-- Panel 1: Population & Density Infographic -->
+<div>
+  <h2 class="text-2xl font-semibold mb-4">Population Growth & Density</h2>
+
+  <!-- Display PNG version -->
+  <img src="../../assets/visualizations/texas-megaregions-infographic.png"
+       alt="Texas Megaregions Population & Density Infographic"
+       class="rounded-xl shadow-lg mb-6">
+
+  <!-- PDF Download Button -->
+  <a href="../../assets/visualizations/texas-megaregions-infographic.pdf"
+     class="inline-block px-5 py-3 bg-blueSoft text-charcoal font-semibold rounded-lg 
+            hover:bg-charcoal hover:text-white transition mb-6">
+    Download Full Infographic (PDF)
+  </a>
+
+  <p class="text-charcoal/80 leading-relaxed">
+    This infographic compares population density, suburban growth patterns, and five-year expansion 
+    rates across the Dallas–Fort Worth and San Antonio–Austin megaregions. It highlights the 
+    concentrated suburban hubs in DFW (Arlington, Irving, Plano, Garland) and the emerging corridor 
+    cities in Central Texas (New Braunfels, San Marcos, Georgetown).
+  </p>
+  </div>
+
+
+    <!-- Panel 2: Migration Flows Map -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Migration Flows Into Texas</h2>
+
+      <img src="../../assets/visualizations/texas-megaregions-migration.jpg" 
+           alt="Migration Flows to Texas Megaregions" 
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        This map visualizes where new residents are moving from, using U.S. Census migration flow data. 
+        Blue lines represent migration into the Dallas–Fort Worth metroplex, while orange lines represent 
+        migration into the San Antonio–Austin corridor. Line thickness corresponds to the share of new 
+        residents from each origin metro area.
+      </p>
+
+      <p class="text-charcoal/80 leading-relaxed mt-4">
+        The tables summarize the top origin metros for each region, revealing strong inflows from 
+        California, the Northeast, and other major Texas metros. These patterns illustrate how both 
+        megaregions function as national migration magnets with distinct geographic profiles.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Methods -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <h2 class="text-2xl font-semibold mb-4">Methods Used</h2>
+    <ul class="list-disc pl-6 space-y-2 text-charcoal/80">
+      <li>Geospatial overlays and spatial clustering</li>
+      <li>U.S. Census population estimates (2022)</li>
+      <li>U.S. Census migration flow data (2020)</li>
+      <li>GIS-based mapping and layout design</li>
+      <li>Data storytelling and infographic composition</li>
+    </ul>
+
+    <a href="../index.html" class="inline-block mt-10 text-blueSoft hover:text-charcoal font-semibold">
+      ← Back to Data Visualizations
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
