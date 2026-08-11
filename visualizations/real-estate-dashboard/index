@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate Dashboard | Data Visualization</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../../index.html" class="hover:text-blueSoft">Home</a>
+      <a href="../index.html" class="hover:text-blueSoft">Data Visualizations</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6">Real Estate Dashboard</h1>
+
+    <p class="text-xl text-charcoal/80 leading-relaxed mb-10 max-w-3xl">
+      A multi‑page dashboard summarizing rent growth, supply pipeline activity, sales comps, and 
+      submarket performance across the Denver metro area. This dashboard was originally built for 
+      internal market analysis at Carmel Partners. Values shown here are fictionalized to protect 
+      proprietary data, while preserving the structure, segmentation, and analytical approach.
+    </p>
+  </section>
+
+  <!-- Visualization Series -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+
+    <!-- Page 1: Dashboard Home / Summary -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Dashboard Home: Rent Growth & Supply Analytics</h2>
+
+      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-thumb.png"
+           alt="Real Estate Dashboard Overview"
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        The landing page provides a high‑level summary of rent growth, concessions, construction activity, 
+        and deliveries across Denver submarkets. Forecast charts highlight expected rent growth and supply 
+        additions over the next five years, while time‑series views compare submarket performance against 
+        the broader market.
+      </p>
+    </div>
+
+       <!-- Page 1: Dashboard Home / Summary -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Dashboard Home Filtered to Select Submarket</h2>
+
+      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-home-select-submarket2.png"
+           alt="Real Estate Dashboard Overview"
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        This landing page combines rent growth forecasts, supply delivery projections, and time‑series trends 
+        to provide a comprehensive view of market performance. Submarket‑level comparisons help identify 
+        outperforming and underperforming areas.
+      </p>
+    </div>
+
+    <!-- Page 2: Supply Pipeline -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Supply Pipeline</h2>
+
+      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-pipeline-3.png"
+           alt="Supply Pipeline Dashboard"
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        The supply pipeline view summarizes proposed, under‑construction, and lease‑up projects across 
+        the metro. Likelihood scoring helps estimate which projects are most likely to deliver in the 
+        next 12–36 months. The map visualizes geographic clustering of development activity.
+      </p>
+    </div>
+
+    <!-- Page 3: Pipeline Summary at Various Geographies -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Pipeline Summary & Likelihood</h2>
+
+      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-pipeline-summary-4.png"
+           alt="Pipeline Summary Dashboard"
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        This page aggregates pipeline activity by project status, move‑in year, and likelihood score. 
+        Comparative charts show how submarkets differ from the broader market in terms of expected 
+        deliveries and development risk.
+      </p>
+    </div>
+
+    <!-- Page 4: Sales Comps -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Sales Comps</h2>
+
+      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-sales-5.png"
+           alt="Sales Comps Dashboard"
+           class="rounded-xl shadow-lg mb-6">
+
+      <p class="text-charcoal/80 leading-relaxed">
+        The sales comps view summarizes multifamily transactions, including price per unit, buyer/seller 
+        profiles, cap rates, and asset class. A map highlights geographic patterns in pricing, while the 
+        table provides detailed property‑level insights.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Methods -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <h2 class="text-2xl font-semibold mb-4">Methods Used</h2>
+    <ul class="list-disc pl-6 space-y-2 text-charcoal/80">
+      <li>Market segmentation and submarket clustering</li>
+      <li>Rent growth forecasting and supply modeling</li>
+      <li>Geospatial mapping of development activity</li>
+      <li>Sales comps analysis and transaction trend modeling</li>
+      <li>Dashboard design and multi‑page layout structure</li>
+    </ul>
+
+    <a href="../index.html" class="inline-block mt-10 text-blueSoft hover:text-charcoal font-semibold">
+      ← Back to Data Visualizations
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
