@@ -50,7 +50,7 @@
     <div>
       <h2 class="text-2xl font-semibold mb-4">Dashboard Home: Rent Growth & Supply Analytics</h2>
 
-      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-thumb.png"
+      <img src="../../assets/visualizations/real-estate-dashboard-thumb.png"
            alt="Real Estate Dashboard Overview"
            class="rounded-xl shadow-lg mb-6">
 
@@ -66,7 +66,7 @@
     <div>
       <h2 class="text-2xl font-semibold mb-4">Dashboard Home Filtered to Select Submarket</h2>
 
-      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-home-select-submarket2.png"
+      <img src="../../assets/visualizations/real-estate-dashboard-home-select-submarket2.png"
            alt="Real Estate Dashboard Overview"
            class="rounded-xl shadow-lg mb-6">
 
@@ -81,7 +81,7 @@
     <div>
       <h2 class="text-2xl font-semibold mb-4">Supply Pipeline</h2>
 
-      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-pipeline-3.png"
+      <img src="../../assets/visualizations/real-estate-dashboard-pipeline-3.png"
            alt="Supply Pipeline Dashboard"
            class="rounded-xl shadow-lg mb-6">
 
@@ -96,7 +96,7 @@
     <div>
       <h2 class="text-2xl font-semibold mb-4">Pipeline Summary & Likelihood</h2>
 
-      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-pipeline-summary-4.png"
+      <img src="../../assets/visualizations/real-estate-dashboard-pipeline-summary-4.png"
            alt="Pipeline Summary Dashboard"
            class="rounded-xl shadow-lg mb-6">
 
@@ -111,7 +111,7 @@
     <div>
       <h2 class="text-2xl font-semibold mb-4">Sales Comps</h2>
 
-      <img src="../../assets/visualizations/real-estate-dashboard/real-estate-dashboard-sales-5.png"
+      <img src="../../assets/visualizations/real-estate-dashboard-sales-5.png"
            alt="Sales Comps Dashboard"
            class="rounded-xl shadow-lg mb-6">
 
