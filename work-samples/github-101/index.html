@@ -104,17 +104,89 @@
       </ul>
     </div>
 
-    <!-- Visuals Placeholder -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4">Visuals</h2>
-      <p class="text-charcoal/80 leading-relaxed mb-6">
-        Selected slides from the instructional guide will be added here.
-      </p>
+<!-- Visuals -->
+<div>
+  <h2 class="text-2xl font-semibold mb-4">Visuals</h2>
+  <p class="text-charcoal/80 leading-relaxed mb-6">
+    Selected slides from the GitHub 101 instructional guide delivered at Mozilla.
+    Click any slide to view it full‑screen.
+  </p>
 
-      <div class="w-full h-64 bg-graySoft rounded-xl flex items-center justify-center text-charcoal/50">
-        Visuals Coming Soon
-      </div>
+  <!-- Gallery Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <!-- Slide 1 -->
+    <div>
+      <img src="../../assets/visualizations/github101-title.PNG"
+           alt="GitHub 101 Title"
+           class="rounded-xl shadow-lg cursor-pointer hover:opacity-80 transition"
+           onclick="openLightbox(this.src)">
+      <p class="text-charcoal/80 mt-2">
+        <strong>GitHub 101 — Title Slide.</strong>  
+        Introductory framing for the training session.
+      </p>
     </div>
+
+    <!-- Slide 2 -->
+    <div>
+      <img src="../../assets/visualizations/github101-benefits.PNG"
+           alt="GitHub 101 Benefits"
+           class="rounded-xl shadow-lg cursor-pointer hover:opacity-80 transition"
+           onclick="openLightbox(this.src)">
+      <p class="text-charcoal/80 mt-2">
+        <strong>Commit History.</strong>  
+        Shows how GitHub supports collaborative workflows.
+      </p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div>
+      <img src="../../assets/visualizations/github101-workflow.PNG"
+           alt="GitHub 101 Workflow"
+           class="rounded-xl shadow-lg cursor-pointer hover:opacity-80 transition"
+           onclick="openLightbox(this.src)">
+      <p class="text-charcoal/80 mt-2">
+        <strong>Streamlining Code Reviews.</strong>  
+        Demonstrates how GitHub tracks changes.
+      </p>
+    </div>
+
+    <!-- Slide 4 -->
+    <div>
+      <img src="../../assets/visualizations/github101-commits.PNG"
+           alt="GitHub 101 Commits"
+           class="rounded-xl shadow-lg cursor-pointer hover:opacity-80 transition"
+           onclick="openLightbox(this.src)">
+      <p class="text-charcoal/80 mt-2">
+        <strong>GitHub Projects.</strong>  
+        Shows steps for committing changes.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox"
+     class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
+     onclick="closeLightbox()">
+  <img id="lightbox-img"
+       class="max-w-3xl w-full rounded-xl shadow-2xl border border-graySoft">
+</div>
+
+<!-- Lightbox Script -->
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
 
   </section>
 
