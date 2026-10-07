@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Precision Pays | Case Study</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueSoft: '#AFC7E3',
+            charcoal: '#2F3E46',
+            lavenderAiry: '#F5F3F7',
+            graySoft: '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lavenderAiry text-charcoal text-[18px] md:text-[19px]">
+
+  <!-- Navigation -->
+  <nav class="p-6 bg-white shadow-sm border-b border-graySoft">
+    <div class="max-w-5xl mx-auto flex items-center space-x-8">
+      <a href="../index.html" class="font-semibold text-charcoal hover:text-blueSoft">Home</a>
+      <a href="index.html" class="hover:text-blueSoft">Case Studies</a>
+      <a href="../work-samples/index.html" class="hover:text-blueSoft">Work Samples</a>
+      <a href="../about.html" class="hover:text-blueSoft">About</a>
+      <a href="../resume.html" class="hover:text-blueSoft">Resume</a>
+      <a href="../contact.html" class="hover:text-blueSoft">Contact</a>
+
+    </div>
+  </nav>
+
+    <!-- Header -->
+  <header class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-4">Extra-Click Advantage</h1>
+    <p class="text-charcoal/80 text-xl mb-6">
+      A pre-production A/B experiment revealing how content placement changes task efficiency and user behavior in mobile onboarding.
+    </p>
+
+    <!-- PDF Download Button -->
+    <a href="Standardized_Scoring_Case_Study_WD.pdf"
+       target="_blank"
+       class="inline-block px-5 py-3 bg-blueSoft text-charcoal font-semibold rounded-lg hover:bg-charcoal hover:text-white transition">
+      Download full case study (PDF)
+    </a>
+  </header>
+
+  <!-- Visual Summary -->
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="bg-white border border-graySoft rounded-xl p-6 mb-12 shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 text-charcoal">At a Glance</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-charcoal/80">
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">+23%</p>
+          <p class="text-sm">Accuracy lift with numeric scoring</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">2.4×</p>
+          <p class="text-sm">More profile views on A‑tier candidates</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-charcoal mb-1">65% → 27%</p>
+          <p class="text-sm">Increase in AI‑summary engagement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Body -->
+  <section class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">The Problem</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+       A manager welcome message was being introduced to a frontline-worker mobile experience, 
+        but its placement could change how easily users discovered it. The challenge was to determine 
+        which location helped users find and engage with the content without adding unnecessary navigation.
+      </p>
+    </div>
+
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Hypothesis & Mechanism</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-4">
+      If the manager message appeared in a more prominent location on the homepage, users would find it faster 
+      and complete the task with less navigation.
+      </p>
+      <p class="text-charcoal/80 leading-relaxed">
+        Three placements were tested: 1) Homepage highlight reel, 2) Announcements card, and 3) For You tab.
+        The experiment measured success, time-to-task, clicks, findability, usability, and confidence — allowing 
+        behavioral efficiency to be evaluated alongside users’ perceptions of the experience.
+      </p>
+    </div>
+
+      <div>
+      <h2 class="text-2xl font-semibold mb-4">Mental Model Alignment</h2>
+      <p class="text-charcoal/80 leading-relaxed mb-4">
+        Behavioral data revealed meaningful differences in how users navigated to the target content.
+        Rather than treating clicks as inherently positive or negative, the analysis reframed them as a findability signal: 
+        when users needed fewer taps to reach the intended content, the experience was more efficient.
+
+        Mobile homepage behavior is influenced by users’ natural tendency to explore unfamiliar content. 
+        To separate that baseline exploration from the effect of message placement, the study included a culture-values warm-up task before the primary task.
+        This provided a behavioral baseline for distinguishing genuine findability differences from differences in users’ willingness to explore.
+      </p>
+    </div>
+
+     <div>
+      <h2 class="text-2xl font-semibold mb-4">The Trade-Off</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        Fewer taps were not simply a matter of minimizing interaction. The goal was to make the intended content easier to find 
+        without requiring users to learn where it lived. This shifted the interpretation of the experiment from “Which design gets the fewest clicks?” 
+        to a more useful product question: How efficiently can users accomplish what they came to do?
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Outcome</h2>
+      <p class="text-charcoal/80 leading-relaxed">
+        The experiment gave the team behavioral evidence for how homepage placement affected findability and task efficiency. 
+        The results helped inform the design direction for the mobile experience and established a stronger framework for evaluating 
+        navigation changes beyond simple click counts.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-graySoft py-8">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-charcoal/70">
+      <p>© 2026 Francine S.</p>
+      <p class="mt-2">Built with GitHub Pages & Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
